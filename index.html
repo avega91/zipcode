@@ -55,7 +55,7 @@
             // Get zip value from input
             const zip = document.querySelector('.zip').value;
             // Make request
-            fetch('http://api.zippopotam.us/mx/' + zip)
+            fetch('https://api.zippopotam.us/mx/' + zip)
                 .then(response => {
                     if (response.status != 200) {
                         showIcon('remove');
